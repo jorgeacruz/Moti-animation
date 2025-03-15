@@ -6,32 +6,43 @@ export default function Layout(){
             screenOptions={{
                 contentStyle: { 
                     backgroundColor: "#000",
-                    //borderRadius:20
+                    borderRadius:20
                  }
             }}
             
         >
             <Stack.Screen name="index" 
                 options={{
-                    
-                    animation: 'fade_from_bottom',
-                    headerShown:false,
-                    title:'Why dont u smile!!',
-                    
+                    presentation:'modal',
+                    animation:'fade_from_bottom',
+                    headerShown:false  
                 }}
             />
-            <Stack.Screen name="joker"
+            <Stack.Screen name="person/index" 
                 options={{
                     presentation:'modal',
-                    animation: 'fade_from_bottom',
+                    animation:'fade_from_bottom',
                     headerShown:false,
-                    headerTintColor:'#fff',
-                    title:'Why dont u smile!!',
-                    headerStyle:{
-                        backgroundColor:'#000'
-                    }
+                    title:'Joker Details'  
                 }}
             />
+            <Stack.Screen name="joker" 
+                options={{
+                    presentation:'modal',
+                    animation:'fade_from_bottom',
+                    headerShown:false,
+                    title:'Joker Details'  
+                }}
+            />
+            <Stack.Screen name="harleyquin" 
+                options={{
+                    presentation:'modal',
+                    animation:'fade_from_bottom',
+                    headerShown:false,
+                    title:'Joker Details'  
+                }}
+            />
+            
         </Stack>
     )
 }
