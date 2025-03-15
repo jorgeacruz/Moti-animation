@@ -11,12 +11,14 @@ export const styles = StyleSheet.create({
         top:10,
         left:30,
         width:350,
-        paddingTop:100
+        paddingTop:100,
     },
     TextSlogan:{
         color:'#fff', 
-        fontSize:30, 
-        fontWeight:'bold'
+        fontSize:20, 
+        fontWeight:'bold',
+        width:380,
+        textAlign:'center'
     },
     midView:{
         flex:1,
@@ -34,6 +36,20 @@ export const styles = StyleSheet.create({
         width:100, 
         height:100,
         margin:50
-    }
+    },
+    // Internal Pages
+    ImageTop:{
+        width:440,
+        height:200,
+        borderTopRightRadius:35,
+        borderTopLeftRadius:35
+    },
+    bodyPage:{
+        flex:1,
+        justifyContent:'flex-start',
+        alignItems:'center',
+        backgroundColor: '#030445',
+        borderRadius:20,
+    },
     
 })
