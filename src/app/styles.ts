@@ -1,10 +1,14 @@
-import { StyleSheet } from "react-native";
- 
+import { StyleSheet, View } from "react-native";
+
 export const styles = StyleSheet.create({
+    backImage:{
+        width:'100%',
+        height:'100%',
+    },
     container:{
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
     },
     ViewSlogan:{
         position:'absolute',
@@ -14,21 +18,40 @@ export const styles = StyleSheet.create({
         paddingTop:100,
     },
     TextSlogan:{
-        color:'#fff', 
+        color:'#000', 
         fontSize:20, 
         fontWeight:'bold',
-        width:380,
+        width:350,
         textAlign:'center'
+    },
+    logo:{
+        width:80,
+        height:80,
+    },
+    wine:{
+        width:300,
+        height:600,
+    },
+    title:{
+        color:'#000',
+        fontSize:60,
+        fontWeight:'bold',
+        width:220
+    },
+    price:{
+        color:'#000',
+        fontSize:80,
+        fontWeight:'bold',
+        width:220
+    },
+    subTitle:{
+        fontSize:20,
+        width:200
     },
     midView:{
         flex:1,
-        flexDirection:'column',
-        justifyContent:'flex-end',
-        width:'100%'
-    },
-    sliderImage:{
-        width:'100%',
-        height:'100%'
+        justifyContent:'center',
+        alignItems:'center',
     },
     botao:{
         position:'absolute',
@@ -38,6 +61,14 @@ export const styles = StyleSheet.create({
         margin:50
     },
     // Internal Pages
+    botaoView:{
+        position:'absolute',
+        top:120,
+        right:-90,
+        width:100, 
+        height:100,
+        margin:50
+    },
     ImageTop:{
         width:440,
         height:200,
@@ -51,5 +82,28 @@ export const styles = StyleSheet.create({
         backgroundColor: '#030445',
         borderRadius:20,
     },
-    
+    thumbView:{
+        width:'100%',
+        paddingVertical:10, 
+        paddingHorizontal:50, 
+        flexDirection:'row', 
+        alignItems:'center',
+        gap:12
+    },
+    thumbImage:{
+        width:100, 
+        height:100,
+        borderWidth:1,
+        borderColor:'#fff',
+        borderRadius:10
+    },
+    viewText:{
+        flexDirection:'column',
+        gap:5
+    },
+    textDescription:{
+        color:'#fff',
+        textAlign:'justify',
+        paddingVertical:10
+    }
 })

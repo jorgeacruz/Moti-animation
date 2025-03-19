@@ -18,14 +18,7 @@ export default function Layout(){
                     headerShown:false  
                 }}
             />
-            <Stack.Screen name="person/index" 
-                options={{
-                    presentation:'modal',
-                    animation:'fade_from_bottom',
-                    headerShown:false,
-                    title:'Joker Details'  
-                }}
-            />
+            
             <Stack.Screen name="joker" 
                 options={{
                     presentation:'modal',
