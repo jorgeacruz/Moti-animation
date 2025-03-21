@@ -206,29 +206,8 @@ export default function App() {
                       <FontAwesome name="arrow-right" size={24} color="#fff" />
                     </TouchableOpacity>
                   </MotiView>
-    {/* 
-        
-         <MotiImage
-         source={require('../assets/stars.png')}
-         style={{width:100, height:20}}
-          // animate parameters
-          from={{
-            opacity:0,
-            translateX:0
-          }}
-          animate={{
-            opacity:1,
-            translateY:-400,
-            translateX:130,
-          }}
-          transition={{
-            type:'spring',
-            duration:7000,
-            delay:6500
-            }}
-        />
-      </View>
-      */}
+                  
+    
     </ImageBackground>
     </SafeAreaView>
   );

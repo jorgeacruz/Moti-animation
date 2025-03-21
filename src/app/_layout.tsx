@@ -1,4 +1,4 @@
-import { Stack,  } from "expo-router";
+import { Stack } from "expo-router";
 
 export default function Layout(){
     return(
@@ -7,7 +7,7 @@ export default function Layout(){
             screenOptions={{
                 contentStyle: { 
                     //backgroundColor: "#000",
-                    borderRadius:20
+                    //borderRadius:20
                  }
             }}
             
@@ -17,7 +17,7 @@ export default function Layout(){
                     presentation:'modal',
                     animation:'fade_from_bottom',
                     headerShown:false,
-                    title:'Home'  
+                    title:'Wine Details'  
                 }}
             />
             
@@ -26,7 +26,11 @@ export default function Layout(){
                     presentation:'modal',
                     animation:'fade_from_bottom',
                     headerShown:false,
-                    title:'Joker Details'  
+                    title:'Beba com moderação',
+                    headerStyle:{
+                        backgroundColor:'#FFC400',
+                    },  
+                    
                 }}
             />  
         </Stack>

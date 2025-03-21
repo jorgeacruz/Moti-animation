@@ -111,12 +111,12 @@ export default function Beer() {
             //delay:6000
             }}
         >
-          <TouchableOpacity 
+            <TouchableOpacity 
             style={styles.botaGoto}
-            onPress={()=> router.replace('index')}
+            onPress={() => router.replace('/')}
             >
             <FontAwesome name="arrow-right" size={24} color="#fff" />
-          </TouchableOpacity>
+            </TouchableOpacity>
         </MotiView>
         
           <StatusBar hidden={true} />
