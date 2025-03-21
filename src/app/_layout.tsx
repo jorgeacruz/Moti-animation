@@ -33,6 +33,18 @@ export default function Layout(){
                     
                 }}
             />  
+            <Stack.Screen name="water" 
+                options={{
+                    presentation:'modal',
+                    animation:'fade_from_bottom',
+                    headerShown:false,
+                    title:'Beba sem moderação',
+                    headerStyle:{
+                        backgroundColor:'#FFC400',
+                    },  
+                    
+                }}
+            />  
         </Stack>
     )
 }

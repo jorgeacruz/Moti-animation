@@ -92,7 +92,7 @@ export default function Beer() {
             style={styles.botao}
             onPress={() => alert('Compra realizada com sucesso!')}
             >
-            <Text style={{color:'#fff', fontSize:20}}>Comprar Agora</Text>
+            <Text style={{color:'#fff', fontSize:20}}>Share with friends</Text>
           </TouchableOpacity>
         </MotiView>
         <MotiView
@@ -113,7 +113,7 @@ export default function Beer() {
         >
             <TouchableOpacity 
             style={styles.botaGoto}
-            onPress={() => router.replace('/')}
+            onPress={() => router.replace('./water')}
             >
             <FontAwesome name="arrow-right" size={24} color="#fff" />
             </TouchableOpacity>

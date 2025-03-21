@@ -111,5 +111,21 @@ export const styles = StyleSheet.create({
         bottom:-180,
         left:110
     },
+    //water styles
+    waterContainer:{
+        flex:1,
+        justifyContent:'flex-start',
+        alignItems:'center',
+        backgroundColor:'#77AFD6'
+
+    },
+    botaoWater:{
+        backgroundColor:'#fff',
+        width:350,
+        height:50,
+        borderRadius:10,
+        justifyContent:'center',
+        alignItems:'center',    
+    },
 
 })

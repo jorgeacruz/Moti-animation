@@ -177,7 +177,7 @@ export default function App() {
               style={styles.botao}
               onPress={() => alert('Compra realizada com sucesso!')}
               >
-                <Text style={{color:'#fff', fontSize:20}}>Comprar Agora</Text>
+                <Text style={{color:'#fff', fontSize:20}}>Buy Right Now</Text>
               </TouchableOpacity>
             </MotiView>
             
