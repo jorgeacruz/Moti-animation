@@ -1,15 +1,24 @@
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Dimensions } from "react-native";
+ const { width, height } = Dimensions.get('screen');
 
 export const styles = StyleSheet.create({
     backImage:{
         width:'100%',
         height:'100%',
     },
-    container:{
+    BeerContainer:{
         flex: 1,
         alignItems: 'center',
         justifyContent: 'flex-start',
+        backgroundColor:'#FFC400'
     },
+    container:{
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor:'#D5CFAC'
+    }
+   ,
     ViewSlogan:{
         position:'absolute',
         top:10,
@@ -18,10 +27,11 @@ export const styles = StyleSheet.create({
         paddingTop:100,
     },
     TextSlogan:{
+        paddingHorizontal:30,
         color:'#000', 
         fontSize:20, 
         fontWeight:'bold',
-        width:350,
+        width:'100%',
         textAlign:'center'
     },
     logo:{
@@ -35,6 +45,7 @@ export const styles = StyleSheet.create({
     title:{
         color:'#000',
         fontSize:60,
+        fontFamily:'Roboto',
         fontWeight:'bold',
         width:220
     },
@@ -46,6 +57,7 @@ export const styles = StyleSheet.create({
     },
     subTitle:{
         fontSize:20,
+        fontFamily:'Roboto',
         width:200
     },
     midView:{
@@ -54,56 +66,50 @@ export const styles = StyleSheet.create({
         alignItems:'center',
     },
     botao:{
+        backgroundColor:'#000',
+        width:350,
+        height:50,
+        borderRadius:10,
+        justifyContent:'center',
+        alignItems:'center',    
+    },
+    botaGoto:{
+        width:50, 
+        height:50, 
+        backgroundColor:'#000', 
+        justifyContent:'center', 
+        alignItems:'center', 
+        borderRadius:50
+    },
+    // beer styles
+    beerImage:{
+        width:width, height:'90%'
+    },
+    logoBeer:{
+        position:'absolute', width:70, height:70
+    },
+    titleBeer:{
         position:'absolute',
-        bottom:20,
-        width:100, 
-        height:100,
-        margin:50
+        width:350, 
+        color:'#000', 
+        fontSize:28, 
+        fontWeight:'bold', 
+        textAlign:'center'
     },
-    // Internal Pages
-    botaoView:{
+    // Wine styles
+    wineBotao:{    
+        position:'absolute', 
+        bottom:-190,
+        left:30
+    },
+    winePrice:{
+        color:'#000',
+        fontSize:80,
+        fontWeight:'bold',
+        width:220,
         position:'absolute',
-        top:120,
-        right:-90,
-        width:100, 
-        height:100,
-        margin:50
+        bottom:-180,
+        left:110
     },
-    ImageTop:{
-        width:440,
-        height:200,
-        borderTopRightRadius:35,
-        borderTopLeftRadius:35
-    },
-    bodyPage:{
-        flex:1,
-        justifyContent:'flex-start',
-        alignItems:'center',
-        backgroundColor: '#030445',
-        borderRadius:20,
-    },
-    thumbView:{
-        width:'100%',
-        paddingVertical:10, 
-        paddingHorizontal:50, 
-        flexDirection:'row', 
-        alignItems:'center',
-        gap:12
-    },
-    thumbImage:{
-        width:100, 
-        height:100,
-        borderWidth:1,
-        borderColor:'#fff',
-        borderRadius:10
-    },
-    viewText:{
-        flexDirection:'column',
-        gap:5
-    },
-    textDescription:{
-        color:'#fff',
-        textAlign:'justify',
-        paddingVertical:10
-    }
+
 })

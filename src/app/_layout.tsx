@@ -3,9 +3,10 @@ import { Stack,  } from "expo-router";
 export default function Layout(){
     return(
         <Stack 
+            
             screenOptions={{
                 contentStyle: { 
-                    backgroundColor: "#000",
+                    //backgroundColor: "#000",
                     borderRadius:20
                  }
             }}
@@ -15,27 +16,19 @@ export default function Layout(){
                 options={{
                     presentation:'modal',
                     animation:'fade_from_bottom',
-                    headerShown:false  
+                    headerShown:false,
+                    title:'Home'  
                 }}
             />
             
-            <Stack.Screen name="joker" 
+            <Stack.Screen name="beer" 
                 options={{
                     presentation:'modal',
                     animation:'fade_from_bottom',
                     headerShown:false,
                     title:'Joker Details'  
                 }}
-            />
-            <Stack.Screen name="harleyquin" 
-                options={{
-                    presentation:'modal',
-                    animation:'fade_from_bottom',
-                    headerShown:false,
-                    title:'Joker Details'  
-                }}
-            />
-            
+            />  
         </Stack>
     )
 }
